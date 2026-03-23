@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #001735;
+  --primary-gold: #cdaa39;
+  --primary-gray: #c4c4c1;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--primary-blue);
+  background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.font-merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+
+.text-primary-gold {
+  color: var(--primary-gold);
+}
+
+.text-primary-gray {
+  color: var(--primary-gray);
+}
+
+.bg-primary-blue {
+  background-color: var(--primary-blue);
+}
+
+.bg-primary-gold {
+  background-color: var(--primary-gold);
+}
+
+.bg-primary-gray {
+  background-color: var(--primary-gray);
+}
+
+.border-primary-gold {
+  border-color: var(--primary-gold);
+}
+
+.hover\:bg-primary-gold:hover {
+  background-color: var(--primary-gold);
+}
+
+.hover\:text-primary-gold:hover {
+  color: var(--primary-gold);
+}
+
+.gradient-overlay {
+  background: linear-gradient(135deg, rgba(0, 23, 53, 0.9) 0%, rgba(205, 170, 57, 0.1) 100%);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.shadow-elegant {
+  box-shadow: 0 10px 30px rgba(0, 23, 53, 0.1);
+}
+
+.transition-elegant {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary {
+  background-color: var(--primary-gold);
+  color: var(--primary-blue);
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5s ease;
+  border: 2px solid var(--primary-gold);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(205, 170, 57, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-blue);
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5s ease;
+  border: 2px solid var(--primary-blue);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 23, 53, 0.3);
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0, 23, 53, 0.08);
+  transition: all 0.5s ease;
+  border: 1px solid rgba(196, 196, 193, 0.2);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 23, 53, 0.15);
+  border-color: var(--primary-gold);
+}
+
+.hero-section {
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23cdaa39" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+  
+  .container-custom {
+    padding: 0 16px;
+  }
+  
+  .service-card {
+    padding: 24px;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
