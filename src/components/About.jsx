@@ -44,7 +44,7 @@ const About = () => {
             <img 
               className="w-full h-auto rounded-2xl shadow-elegant"
               alt="Prédio residencial moderno com varandas e céu azul"
-             src="https://horizons-cdn.hostinger.com/af5a13d9-5d1d-4d49-b399-53ece728ed36/6e898cda6a43eca9cbc6e22178cf8ece.webp" />
+             src="/imoveis/predio-residencial.webp" />
           </motion.div>
 
           {/* Content */}

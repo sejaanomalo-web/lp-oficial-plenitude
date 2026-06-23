@@ -33,7 +33,7 @@ const Header = () => {
             className="logo-container"
           >
             <img 
-              src="https://horizons-cdn.hostinger.com/af5a13d9-5d1d-4d49-b399-53ece728ed36/b25517415e9c33cb589dc0cb6ff45cf4.png" 
+              src="/logo-plenitude.png"
               alt="Plenitude - Administradora de Condomínios" 
             />
           </motion.div>

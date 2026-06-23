@@ -42,7 +42,7 @@ const Hero = () => {
                 <img
                   className="w-full h-auto rounded-2xl shadow-2xl"
                   alt="Condomínio moderno e chamativo com design arrojado"
-                  src="https://st3.depositphotos.com/7677414/13944/i/450/depositphotos_139441684-stock-photo-modern-residential-buildings-with-outdoor.jpg" />
+                  src="/imoveis/condominio-piscina.png" />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#cdaa39] rounded-full opacity-20 blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#001735] rounded-full opacity-10 blur-xl"></div>
