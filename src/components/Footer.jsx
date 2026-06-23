@@ -48,7 +48,7 @@ const Footer = () => {
           }} className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-[#cdaa39]" />
-                <a href="https://wa.me/5545999004929" target="_blank" rel="noopener noreferrer" className="font-inter text-gray-300 hover:text-[#cdaa39] transition-colors">(45) 99900-4929 | (45) 99942-0297</a>
+                <a href="https://wa.me/5545999420297" target="_blank" rel="noopener noreferrer" className="font-inter text-gray-300 hover:text-[#cdaa39] transition-colors">(45) 99942-0297</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-[#cdaa39]" />
@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-[#cdaa39] mt-0.5 flex-shrink-0" />
                 <span className="font-inter text-gray-300">
-                  Rua benjamim constant - 469, parque São Paulo 85813-580
+                  Avenida Brasil, 5337, Centro, Cascavel-PR, 85802-770
                 </span>
               </div>
               <div className="flex items-center space-x-3">

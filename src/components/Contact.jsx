@@ -39,8 +39,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Telefone',
-      info: '(45) 99900-4929 | (45) 99942-0297',
-      link: 'https://wa.me/5545999004929'
+      info: '(45) 99942-0297',
+      link: 'https://wa.me/5545999420297'
     },
     {
       icon: Mail,
@@ -51,7 +51,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Endereço',
-      info: 'Rua benjamim constant - 469, parque São Paulo 85813-580',
+      info: 'Avenida Brasil, 5337, Centro, Cascavel-PR, 85802-770',
       link: '#'
     }
   ];
